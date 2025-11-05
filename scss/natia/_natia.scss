@@ -1,0 +1,67 @@
+.section-third {
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 20px;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.45);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 30px;
+
+    textarea {
+        max-width: 576px;
+        width: 100%;
+        min-height: 100px;
+        padding: 10px;
+        border: 1px dashed palevioletred;
+    }
+
+    textarea:focus {
+        border: 1px dashed blue;
+        outline: none;
+    }
+
+    div {
+        color: blue;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .error {
+        color: red;
+    }
+
+    button {
+        width: 100%;
+        border-style: none;
+        border: 1px solid orangered;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: bisque;
+        font-size: 16px;
+        font-weight: 600;
+        color: orangered;
+        
+    }
+
+    button:hover {
+        background-color: blanchedalmond;
+    }
+
+    button:disabled {
+        background-color: #cfcbcb;
+        color: #616060;
+        border: none;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    #warning {
+        font-size: 12px;
+        color: red;
+    }
+}
