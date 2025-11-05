@@ -1,3 +1,32 @@
+.section-first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-first-container .section-first-btns-container #text {
+  font-size: 25px;
+}
+.section-first-container .section-first-btns-container #red {
+  background-color: red;
+  color: white;
+}
+.section-first-container .section-first-btns-container #green {
+  background-color: green;
+  color: white;
+}
+.section-first-container .section-first-btns-container #blue {
+  background-color: blue;
+  color: white;
+}
+.section-first-container .section-first-btns-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
 .section-second h2 {
   font-size: 2.5rem;
   font-weight: 700;
