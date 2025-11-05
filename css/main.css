@@ -1,1 +1,217 @@
+.section-first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-first-container .section-first-btns-container #text {
+  font-size: 25px;
+}
+.section-first-container .section-first-btns-container #red {
+  background-color: red;
+  color: white;
+}
+.section-first-container .section-first-btns-container #green {
+  background-color: green;
+  color: white;
+}
+.section-first-container .section-first-btns-container #blue {
+  background-color: blue;
+  color: white;
+}
+.section-first-container .section-first-btns-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.section-second h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: sans-serif;
+}
+.section-second .input-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-second #task-input {
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  width: 200px;
+}
+.section-second #task-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+.section-second .input-flex button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+}
+.section-second .input-flex button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.section-second .todo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 260px;
+}
+.section-second .todo-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.section-second .todo-item:hover {
+  background-color: #e9ecef;
+  transform: translateX(3px);
+  cursor: pointer;
+}
+.section-second .completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.section-second .content-seciton > button {
+  padding: 10px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+}
+.section-second .content-seciton > button:hover {
+  background-color: #dc2739;
+  transform: scale(1.05);
+}
+
+.section-4 #gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px;
+}
+.section-4 .thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #525252;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-4 .thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-overlay img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.modal-overlay .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.section-third {
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid orange;
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.45);
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 30px;
+}
+.section-third textarea {
+  max-width: 576px;
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px dashed palevioletred;
+}
+.section-third textarea:focus {
+  border: 1px dashed blue;
+  outline: none;
+}
+.section-third div {
+  color: blue;
+  font-size: 20px;
+  font-weight: 700;
+}
+.section-third .error {
+  color: red;
+}
+.section-third button {
+  width: 100%;
+  border-style: none;
+  border: 1px solid orangered;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: bisque;
+  font-size: 16px;
+  font-weight: 600;
+  color: orangered;
+}
+.section-third button:hover {
+  background-color: blanchedalmond;
+}
+.section-third button:disabled {
+  background-color: #cfcbcb;
+  color: #616060;
+  border: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.section-third #warning {
+  font-size: 12px;
+  color: red;
+}
+
 /*# sourceMappingURL=main.css.map */
